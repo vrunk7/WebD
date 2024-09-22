@@ -1,0 +1,164 @@
+     body {
+        margin: 0;
+        background-color: black;
+      }
+      
+      nav {
+        position: fixed; /* Ensure navbar stays in place */
+        top: 0;
+        z-index: 1000;
+        margin-bottom: 0;
+        width: 100%;
+      }
+      .about{
+        padding:10px;
+      }
+      section {
+        position: relative; 
+        padding: 30px !important; /* Add top padding to account for the fixed navbar */
+        color: #fff; /* Ensure text color is white */
+        background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent overlay for better text readability */
+        margin-bottom: 30px;
+      }
+      .nav-link {
+        color:gold; /* Change link color */
+      }
+      .nav-link.active {
+        color: gold; /* Active link text color */
+        border-bottom: 2px solid gold; /* Active underline color */
+      }
+      .navbar-brand {
+        background: linear-gradient(to right,  #f5f523, #fa840e); /* Apply gradient */
+        -webkit-background-clip: text; /* Clip background to text */
+        -webkit-text-fill-color: transparent; /* Make text transparent to show gradient */
+      }
+      nav.navbar {
+          background-color: #070707 !important ; /* Dark background for good contrast */
+          border-bottom: 2px solid gold !important ; /* Optional yellow bottom border */
+      }
+      .footerContainer{
+          width: 100%;
+          padding: 70px 30px 20px;
+      }
+      .socialIcons{
+          display: flex;
+          justify-content: center;
+      }
+      .socialIcons a{
+          text-decoration: none;
+          padding: 5px;
+          margin: 5px;
+          border-radius: 50%;
+          background-color: black;
+      }
+      .socialIcons a i{
+          font-size: 1.5em;
+          color: gold;
+          opacity: 0.9;
+      }
+      .socialIcons a:hover{
+          background-color: gold;
+          transition: 0.5s;
+      }
+      .socialIcons a:hover i{
+          color: black !important;
+          transition: 0.5s;
+      }
+      footer{
+          background-color: black;
+      }
+      .footerBottom{
+          background-color: #070707;
+          padding: 10px;
+          text-align: center;
+      }
+      .footerBottom p{
+          color: gold;
+      }
+      .section1{
+          margin-top: 10px;
+          height: 100vh !important;
+          width: 100vh !important;
+      }
+      .lead{
+          font-weight: 100 !important;
+          text-shadow: 0 0 10px rgb(255, 215, 0) !important;
+          color: rgb(255, 215, 0) !important;
+      }
+      .custom-link {
+          color: gold;
+          text-decoration: none;
+          transition: 0.3s; /* Smooth transition for hover effects */
+          display: inline-block; /* Allows scaling effect to work */
+      }
+      .custom-link:hover {
+          transform: scale(1.05); /* Scales the link slightly on hover */
+      }
+      .project-card {
+      background-color: rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+      text-align: justify;
+      transition: transform 0.3s ease-in-out;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .project-title {
+      font-weight: 200 !important;
+      text-shadow: 0 0 10px rgb(255, 215, 0) !important;
+      color: rgb(255, 215, 0) !important;
+      text-decoration: none;
+      font-size: 1.5rem;
+      margin: 15px 0 10px;
+    }
+
+    .project-title:hover {
+      text-decoration: underline;
+    }
+    
+      @media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.5rem; /* Adjust brand size */
+  }
+  .nav-link {
+    font-size: 1rem; /* Adjust link size */
+  }
+  .lead {
+    font-size: 1.2rem; /* Adjust lead text size */
+  }
+  .about {
+    padding: 0 5px; /* Reduce padding for medium screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.2rem; /* Further adjust brand size */
+  }
+  .nav-link {
+    font-size: 0.9rem; /* Further adjust link size */
+  }
+  .lead {
+    font-size: 1rem; /* Further adjust lead text size */
+  }
+  .about {
+    padding: 0 2px; /* Reduce padding for small screens */
+  }
+  .footerContainer {
+    padding: 40px 15px 10px; /* Adjust footer padding */
+  }
+  .image-class {
+    width: 80%;  /* Shrink images for small screens */
+    margin: 0 auto;  /* Center the image */
+  }
+}

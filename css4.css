@@ -1,0 +1,163 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.contact-info,
+.contact-form-section {
+    width: 48%;
+    background-color: rgba(10, 8, 8, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.contact-info h3,
+.contact-form-section h3 {
+    font-weight: 200;
+    text-shadow: 0 0 10px rgb(255, 215, 0);
+    color: rgb(255, 215, 0);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.contact-info p {
+    color: #F1F1F2;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.contact-info i {
+    color: gold;
+    margin-right: 10px;
+}
+
+.contact-form-section form input,
+.contact-form-section form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid gold;
+    background-color: rgba(40, 39, 39, 0.1);
+    color: #ffffff;
+}
+
+.contact-form-section form input[type="submit"] {
+    background-color: gold;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form-section form input[type="submit"]:hover {
+    background-color: #A1D6E2;
+    color: black;
+    transition: 0.4s;
+}
+
+nav {
+    position: fixed; 
+    top: 0;
+    z-index: 1000;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.nav-link {
+    color: gold; 
+}
+
+.nav-link.active {
+    color: gold;
+    border-bottom: 2px solid gold; 
+}
+
+.navbar-brand {
+    background: linear-gradient(to right,  #f5f523, #fa840e); 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent;
+}
+
+nav.navbar {
+    background-color: #070707 !important; 
+    border-bottom: 2px solid gold !important; 
+}
+
+.footerContainer {
+    width: 100%;
+    padding: 70px 30px 20px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+}
+
+.socialIcons a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.socialIcons a i {
+    font-size: 1.5em;
+    color: gold;
+    opacity: 0.9;
+}
+
+.socialIcons a:hover {
+    background-color: gold;
+    transition: 0.5s;
+}
+
+.socialIcons a:hover i {
+    color: black !important;
+    transition: 0.5s;
+}
+
+footer {
+    background-color: black;
+}
+
+.footerBottom {
+    background-color: #070707;
+    padding: 10px;
+    text-align: center;
+}
+
+.footerBottom p {
+    color: gold;
+}
+
+.lead {
+    color:gold;
+}
+
+.custom-link {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block; 
+}
+
+.custom-link:hover {
+    transform: scale(1.05);
+    color: gold; 
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .contact-info,
+    .contact-form-section {
+        width: 100%;
+    }
+}
