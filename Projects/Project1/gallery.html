@@ -1,0 +1,130 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title> Gallery </title>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+			
+
+		<script>
+	    $(document).ready(function(){
+            $('.section h3').click(function(){
+                $(this).next('.grid1').children('.grid-item').slideToggle(1000);
+            });
+        });
+		</script>
+		<style>
+			body{
+				background-color: #172d13;
+				
+			}
+			.head {
+				text-align: center;
+				padding: 15px 0;
+				background-color: #5daa68;
+				color: #faf1cf;
+				margin-bottom: 15px;
+				border-bottom: 3px solid #45af2a;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+			.section{
+				background-color: #438945;
+				color:#faf1cf;
+				margin-bottom
+			}
+			.section h3 :hover{
+				background-color: blue;
+			
+			}
+			.section h3{
+				text-align:left;
+				cursor:pointer;
+				margin-bottom:10px;
+				background-color:#45af2a;
+				padding: 15px 20px	
+			}
+			<!--h1{
+				text-align:center;
+				padding:5px;
+				background-color:#5daa68;
+				color:#faf1cf;
+			}-->
+			.grid1 {
+  				display: grid;
+  				grid-template-columns: repeat(4, 1fr);
+  				padding: 5px;
+				align-content: space-evenly;
+				width: 100%;
+				gap: 10px;
+				box-sizing: border-box;
+				overflow: visible;
+			}
+			.grid-item{
+				display:none;
+				color:black;
+				overflow:visible;
+			}
+			.grid-item img {
+            			height: 100%; /* Ensure image covers its container */
+            			width: 100%; /* Make sure image fills its container */
+            			object-fit: cover; /* Ensure the image covers the container */
+            			display: block;
+            			transition: transform 0.3s ease; /* Smooth transition for hover effect */
+				border: 2px solid black;
+        		}
+        		.grid-item img:hover {
+            			transform: scale(1.1); /* Slightly enlarge image on hover */
+        		}
+			 @media (max-width: 1200px) {
+            			.grid1 {
+                			grid-template-columns: repeat(3, 1fr);
+            			}
+        		}
+        		@media (max-width: 900px) {
+            			.grid1 {
+					grid-template-columns: repeat(2, 1fr);
+            			}
+        		}
+        		@media (max-width: 600px) {
+            			.grid1 {
+                			grid-template-columns: 1fr;
+            			}
+        		}
+
+		</style>
+	</head>
+	<body>
+		<div class="head"><h1><i class="fa fa-image" aria-hidden="true"></i> Gallery </h1></div>
+		<div class="section"><H3> Photos </H3>
+		<div class="grid1">
+		<div class="grid-item"><img src="rm1.jpg" alt="madrid 1"></div>
+		<div class="grid-item"><img src="pr.jpg" alt="portugal 1"></div>
+		<div class="grid-item"><img src="rm2.jpg" alt="madrid 2"></div>
+		<div class="grid-item"><img src="pr1.jpg" alt="portugal 2"></div>
+		<div class="grid-item"><img src="rm.png" alt="madrid 3"></div>
+		<div class="grid-item"><img src="cr71.jpg" alt="cr7 1"></div>
+		<div class="grid-item"><img src="cr72.jpg" alt="cr7 2"></div>
+		<div class="grid-item"><img src="cr73.jpg" alt="cr7 3"></div>
+		</div>
+		</div>
+		<div class="section"><H3> Screenshots </H3>
+		<div class="grid1">
+		<div class="grid-item"><img src="Screenshot 2024-07-14 171012.png" alt="ss1"></div>
+		<div class="grid-item"><img src="Screenshot 2024-07-28 121650.png" alt="ss2"></div>
+		<div class="grid-item"><img src="Screenshot 2024-08-24 124227.png" alt="ss3"></div>
+		<div class="grid-item"><img src="Screenshot 2024-07-28 173730.png" alt="ss4"></div>
+		<div class="grid-item"><img src="Screenshot 2024-08-24 124432.png" alt="ss5"></div>
+		<div class="grid-item"><img src="Screenshot 2024-08-01 193716.png" alt="ss6"></div>
+		<div class="grid-item"><img src="Screenshot 2024-06-27 183144.png" alt="ss7"></div>
+		<div class="grid-item"><img src="Screenshot 2024-08-01 194646.png" alt="ss8"></div>
+		</div>
+		</div>
+	</body>
+</html>
